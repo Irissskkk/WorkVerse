@@ -3,7 +3,7 @@ import User from "./User";
 
 class Users extends React.Component {
     render() {
-        console.log('Users props:', this.props); // ← ЛОГ
+        console.log('Users props:', this.props); 
         
         try {
             if (this.props.users && this.props.users.length > 0) {
