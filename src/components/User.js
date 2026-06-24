@@ -8,21 +8,21 @@ class User extends React.Component {
         this.state = {
             editForm: false
         };
-        console.log('User constructor, editForm:', this.state.editForm); // ← ЛОГ
+        console.log('User constructor, editForm:', this.state.editForm); 
     }
 
     toggleEditForm = () => {
-        console.log('Клик по молотку! Текущий editForm:', this.state.editForm); // ← ЛОГ
+        console.log('Клик по молотку! Текущий editForm:', this.state.editForm); 
         this.setState({ 
             editForm: !this.state.editForm 
         }, () => {
-            console.log('Новый editForm:', this.state.editForm); // ← ЛОГ
+            console.log('Новый editForm:', this.state.editForm); 
         });
     };
 
     render() {
         const { user, onDelete, onEdit } = this.props;  
-        console.log('User render, editForm:', this.state.editForm); // ← ЛОГ
+        console.log('User render, editForm:', this.state.editForm); 
         
         return (
             <div className="user">
@@ -39,7 +39,7 @@ class User extends React.Component {
                 <b>{user.isHappy ? 'Хапи' : 'Бедни'}</b>
 
                 {this.state.editForm && (
-                    <div style={{border: '2px solid red', padding: '10px'}}> {/* ← ВИЗУАЛЬНАЯ ПРОВЕРКА */}
+                    <div style={{border: '2px solid red', padding: '10px'}}> 
                         <h4>Форма редактирования открыта!</h4>
                         <AddUser 
                             user={user} 
