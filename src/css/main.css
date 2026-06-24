@@ -37,15 +37,14 @@ main .user {
     background-color: #3eafa0;
     padding: 20px;
     border-radius: 10px;
-    position: relative; /* Для позиционирования иконок */
+    position: relative; 
 }
 
-/* Иконки внутри карточки пользователя */
 main .user .delete-icon {
     float: right;
     color: #134b57;
     cursor: pointer;
-    transform: scale(1.5); /* Увеличиваем иконку */
+    transform: scale(1.5); 
     margin-left: 10px;
 }
 
@@ -57,13 +56,11 @@ main .user .edit-icon {
     transform: scale(1.5);
 }
 
-/* Исправлено: убраны пробелы перед hover */
 main .user .delete-icon:hover,
 main .user .edit-icon:hover {
     opacity: 0.5;
 }
 
-/* Стили для формы в aside */
 form input, 
 form textarea, 
 form button {
